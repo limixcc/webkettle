@@ -106,5 +106,13 @@ cd ./kettle-webapp
 mvn clean tomcat7:deploy
 ```
 
+### 常见问题
+* Mysql数据库大小写不敏感,不能正常查询数据库, ubuntu对应路径``/etc/mysql/my.cnf``,其他可能路径``/etc/my.cnf``
+
+```ini
+[mysqld]
+lower_case_table_names=1
+```
+
 # 许可证
 [![LICENSE](https://img.shields.io/github/license/JoeyBling/webkettle "LICENSE")](./LICENSE "LICENSE")
